@@ -1,0 +1,452 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;   
+    --border-color: #201f1f17;   
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    
+
+    /* font family variables. */  
+    --roboto: 'Roboto', cursive ;
+} 
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+     width: 100%;
+    height: 100%;
+}
+
+/* header start   */
+
+.nav-item{
+    padding: 20px;
+}
+.nav-item a{
+    padding: 0;
+}
+.nav-item .nav-link { 
+   font: normal 500 15px/20px var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--title-color);
+    transition: all 0.3s ease; 
+}
+
+
+.nav-item .nav-link.active {
+    background: var(--gradient-color); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.nav-item .nav-link:hover {
+    background: var(--gradient-color); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} 
+
+
+/* header end   */
+
+/* banner start  */
+.banner{
+    padding-bottom: 120px;
+}
+.titeltop{
+    padding-top: 140px;
+    font: normal bold 50px / 72px var(--roboto);
+}
+.titeltop::after {
+    content: " ";
+    height: 3px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 30px;
+    transform: translateY(-10px);
+}
+.title{
+    font: normal bold 75px / 70px var(--roboto);
+    line-height: 1.1;
+}
+.subtitel{
+    font: normal bold 30px / 70px var(--roboto);
+}
+.banner-btn{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+    padding: 12px 35px;
+    font: normal 500 16px / 20px var(--roboto);
+    border: 3px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 25px;
+    
+}
+
+.banner-btn::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+
+}
+.banner-btn:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.btncv{
+    font: normal 500 16px / 20px var(--roboto);
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+    border: 5px solid var(--gradient-color);
+     padding: 12px 35px;
+     border-radius: 4px;
+
+}
+.btncv:hover{
+    background: var(--gradient-color);
+    color: white;
+    box-shadow: var(--box-shadow);
+}
+/* banner end  */
+
+/* about start  */
+.about-text-titel h2,
+.about-text-titel h2 span {
+    /* max-width: 100%;
+    overflow-x: hidden; */
+}
+
+.about{
+    padding: 50px 0;
+}
+ .about-text-titel h2 span{
+    display: block;
+    font-family: var(--roboto);
+    font-size: 49px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 20px;
+} 
+
+.pera{
+   font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: var(--roboto);
+    color: var(--text-color);
+}
+/* about end  */
+
+/* brand area start  */
+
+/* .....  */
+.brand-area {
+  overflow-x: hidden;
+}
+
+.single-brand {
+  padding: 12px;
+}
+
+.single-brand img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Prevent negative margin overflow */
+/* @media (max-width: 575px) {
+  .brand-area .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+} */
+/* ....  */
+.brand-area{
+    padding: 45px 0;
+    justify-content: center;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+.single-brand{
+    border: 1px solid var(--border-color);
+    padding: 30px 0;
+    text-align: center;
+    margin: 14px 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.single-brand:hover img{
+    filter: brightness(0.15);
+}
+.single-brand img {
+width: 50%;
+}
+.Experience-area{
+
+background: url(../images/client-info-bg.png) no-repeat 45px 20px;
+padding: 32px 0;
+width: 640px;
+
+padding-left: 128px;
+position: relative;
+ 
+}
+.year-area span{
+    display: block;
+}
+.bg-plan{
+    position:absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 291px;
+    z-index: -1;
+}
+
+
+
+.years{
+    font-family: var(--roboto) ;
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 40px;
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.year-area h2 span{
+    font-family: var(--roboto);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.call-now{
+    padding-left: 15px;
+}
+.call-now a {
+    font-family: var(--roboto);
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.Experience-area span{
+    display: block;
+}
+.call-area{
+    padding-top: 200px;
+   
+}
+.call-area span i{
+    font-size: 48px;
+}
+/* barand area end  */
+
+/* services start  */
+.services{
+    padding: 110px 32px;
+}
+.services-titel h1{
+    font-size: 35px;
+}
+.services-card{
+    background: rgba(248, 252, 253, 0.973);
+    padding:32px 20px;
+    /* width: 256px; */
+    margin: 80px 8px;
+    transition: box-shadow .7s ease;
+
+}
+.services-card:hover{
+    box-shadow: var(--box-shadow);
+}
+.card-title{
+    font-family: var(--roboto);
+    margin-bottom: 12px;
+}
+.card-text{
+    color: #6c757d;
+}
+.services-img{
+    padding: 24px 0;
+}
+/* services end  */
+/* project area start  */
+.project-area{
+    padding: 65px 40px;
+}
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+.project-titel h4{
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+}
+button:focus,
+button:active
+button:hover
+btn:active,
+btn.active{
+outline: 0 !important;
+box-shadow: none !important;
+}
+/* project area end  */
+
+/* review start  */
+.review{
+    padding: 45px 0;
+}
+.review-titel{
+    font-family: var(--roboto);
+    font-size: 39px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.review-text p{
+padding: 16px 115px;
+}
+.item{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 48px 0;
+
+}
+.client-img img{
+    padding: 32px;
+}
+.about-client{
+    padding-top: 32px;
+}
+.about-client h4{
+    font-family: var(--roboto);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.about-client{
+    font-size: 14px;
+}
+
+/* ......  */
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  display: inline-block;
+}
+
+.owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: #999;
+  display: block;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.owl-dot.active span {
+  background: var(--primary-color);
+}
+
+/* review end  */
+
+
+/* Subscribe start  */
+
+.Subscribe-area{
+    background: url(../images/subscribe-bg.png) no-repeat;
+    padding: 160px 0;
+    margin: 48px auto;
+}
+.Subscribe-titel h2{
+    font-family: var(--roboto);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    color: whitesmoke;
+}
+.Subscribe-titel p {
+    color: whitesmoke ;
+    padding: 16px 64px;
+}
+.c-from input{
+    width: 400px;
+    padding: 14px 16px;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px / 20px var(--roboto);
+}
+.Subscribe-btn{
+    background: whitesmoke;
+    color: #000;
+    padding:11px 32px;
+    margin-left: 110px;
+}
+/* Subscribe end  */
+
+
+/* footer start  */
+.footer-area{
+    padding: 80px 0;
+    background: url(../images/footer-bg.png) no-repeat;
+}
+.social h2{
+    font-family: var(--roboto);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.social a i{
+    font-size: 22px;
+    padding: 32px;
+    color: var(--border-color);
+}
+.social a:hover i{
+    color: var(--primary-color);
+}
